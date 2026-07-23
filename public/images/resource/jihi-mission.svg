@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-label="JIHI hand tools set">
+  <defs>
+    <linearGradient id="bgM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#20336e"/>
+      <stop offset="1" stop-color="#101a3d"/>
+    </linearGradient>
+    <linearGradient id="steelM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6ebf1"/>
+      <stop offset="1" stop-color="#97a1b3"/>
+    </linearGradient>
+    <linearGradient id="steelM2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfd6e0"/>
+      <stop offset="1" stop-color="#828d9f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="300" fill="url(#bgM)"/>
+
+  <!-- faint gear motif -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="9">
+    <circle cx="300" cy="150" r="108"/>
+    <circle cx="300" cy="150" r="72"/>
+  </g>
+  <!-- orange accent corner (top-right) -->
+  <path d="M600 0 L600 52 L488 0 Z" fill="#e8641c" fill-opacity="0.9"/>
+
+  <!-- Fanned spanners around bottom pivot (300,285) -->
+  <g transform="rotate(-26 300 285)">
+    <rect x="293" y="72" width="14" height="213" rx="7" fill="url(#steelM2)"/>
+    <circle cx="300" cy="72" r="20" fill="url(#steelM2)"/>
+    <circle cx="300" cy="72" r="10" fill="#16255a"/>
+    <rect x="284" y="260" width="32" height="28" rx="6" fill="url(#steelM2)"/>
+    <rect x="293" y="274" width="14" height="14" fill="#16255a"/>
+  </g>
+
+  <g transform="rotate(26 300 285)">
+    <rect x="293" y="72" width="14" height="213" rx="7" fill="url(#steelM2)"/>
+    <circle cx="300" cy="72" r="20" fill="url(#steelM2)"/>
+    <circle cx="300" cy="72" r="10" fill="#16255a"/>
+    <rect x="284" y="260" width="32" height="28" rx="6" fill="url(#steelM2)"/>
+    <rect x="293" y="274" width="14" height="14" fill="#16255a"/>
+  </g>
+
+  <!-- center spanner (front, with orange grip) -->
+  <g transform="rotate(0 300 285)">
+    <rect x="292" y="60" width="16" height="228" rx="8" fill="url(#steelM)"/>
+    <rect x="292" y="150" width="16" height="62" fill="#e8641c"/>
+    <circle cx="300" cy="60" r="22" fill="url(#steelM)"/>
+    <circle cx="300" cy="60" r="11" fill="#16255a"/>
+    <rect x="281" y="260" width="38" height="30" rx="6" fill="url(#steelM)"/>
+    <rect x="292" y="274" width="16" height="16" fill="#16255a"/>
+  </g>
+
+  <!-- hex nut -->
+  <g transform="translate(118 232)">
+    <polygon points="-28,0 -14,-24 14,-24 28,0 14,24 -14,24" fill="#b9c1cd"/>
+    <polygon points="-28,0 -14,-24 14,-24 28,0 14,24 -14,24" fill="none" stroke="#7e8798" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="#16255a"/>
+  </g>
+</svg>

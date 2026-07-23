@@ -24,7 +24,7 @@ if (! function_exists('media_url')) {
      * Resolve a stored image path to a URL. Handles both uploaded files
      * (storage/...) and paths into the template's public images folder.
      */
-    function media_url(?string $path, string $fallback = 'images/resource/image-1.jpg'): string
+    function media_url(?string $path, string $fallback = 'images/resource/about.jpg'): string
     {
         if (! $path) {
             return asset($fallback);

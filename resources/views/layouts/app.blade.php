@@ -32,6 +32,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="{{ asset('js/respond.js') }}"></script><![endif]-->
+
+	<style>
+		/* Uniform product/category cards — equal heights, no zigzag */
+		.news-section .row.clearfix { display: flex; flex-wrap: wrap; }
+		.news-section .news-block { display: flex; margin-bottom: 30px; }
+		.news-section .news-block > .inner-box { display: flex; flex-direction: column; width: 100%; height: 100%; }
+		.news-section .news-block .inner-box .image { overflow: hidden; }
+		.news-section .news-block .inner-box .image img { width: 100%; height: 250px; object-fit: cover; display: block; }
+		.news-section .news-block .inner-box .lower-content { flex: 1 1 auto; }
+	</style>
 </head>
 
 <body>

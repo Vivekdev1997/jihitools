@@ -4,7 +4,7 @@
 
 @section('content')
 <!--Page Title-->
-<section class="page-banner" style="background-image:url({{ media_url($category->image, 'images/background/services-title-bg.jpg') }});">
+<section class="page-banner" style="background-image:url({{ media_url($category->image, 'images/background/breadcrumb.png') }});">
     <div class="auto-container">
         <div class="inner-container clearfix">
             <h1>{{ $category->name }}</h1>

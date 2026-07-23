@@ -4,7 +4,7 @@
 
 @section('content')
 <!--Page Title-->
-<section class="page-banner" style="background-image:url({{ asset('images/background/services-title-bg.jpg') }});">
+<section class="page-banner" style="background-image:url({{ asset('images/background/breadcrumb.png') }});">
     <div class="auto-container">
         <div class="inner-container clearfix">
             <h1>{{ $product->name }}</h1>
@@ -19,13 +19,30 @@
 <!--End Page Title-->
 
 <!-- Product Detail -->
+<style>
+    .product-detail-row { display: flex; flex-wrap: wrap; align-items: center; }
+    .product-detail-row .product-media img {
+        width: 100%; height: 440px; object-fit: cover;
+        border-radius: 8px; display: block;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    .product-detail-row .product-info { padding-left: 15px; }
+    @media (max-width: 991px) {
+        .product-detail-row .product-media img { height: 320px; margin-bottom: 35px; }
+        .product-detail-row .product-info { padding-left: 0; }
+    }
+</style>
+<br>
+<br>
+<br>
+<br>
 <section class="about-section">
     <div class="auto-container">
-        <div class="row clearfix">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <img src="{{ media_url($product->image) }}" alt="{{ $product->name }}" style="width:100%;border-radius:8px;" />
+        <div class="row clearfix product-detail-row">
+            <div class="col-lg-6 col-md-12 col-sm-12 product-media">
+                <img src="{{ media_url($product->image) }}" alt="{{ $product->name }}" />
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12 product-info">
                 <div class="sec-title">
                     <div class="title">{{ $product->category->name }}</div>
                     <h2>{{ $product->name }}</h2>
@@ -44,7 +61,10 @@
     </div>
 </section>
 <!-- End Product Detail -->
-
+<br>
+<br>
+<br>
+<br>
 @if ($related->isNotEmpty())
 <!-- Related Products -->
 <section class="news-section" style="padding: 0 0 90px;">

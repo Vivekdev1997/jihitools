@@ -4,6 +4,13 @@
 
 @section('content')
 
+<style>
+	/* Keep the slider arrows but remove their box background */
+	.main-slider .tparrows,
+	.main-slider .tparrows:hover { background: transparent !important; }
+	.main-slider .tparrows::before { color: #ffffff; }
+</style>
+
 <!--Main Slider-->
 <section class="main-slider">
 
@@ -238,10 +245,10 @@
 			<div class="images-column col-lg-6 col-md-12 col-sm-12">
 				<div class="inner-column">
 					<div class="image wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<img src="{{ asset('images/gallery/1.jpg') }}" alt="JIHI Hand Tools workshop" />
+						<img src="{{ asset('images/resource/abt1.jpg') }}" alt="JIHI Hand Tools workshop" />
 					</div>
 					<div class="image wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<img src="{{ asset('images/resource/innovator-1.jpg') }}" alt="JIHI Hand Tools production" />
+						<img src="{{ asset('images/resource/abt2.jpg') }}" alt="JIHI Hand Tools production" />
 					</div>
 				</div>
 			</div>

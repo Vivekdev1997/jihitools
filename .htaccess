@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Serve real files that live inside public/ (css, js, images, favicon)
+    RewriteCond %{REQUEST_URI} ^/([^/]+)/(.+)$
+    RewriteCond %{DOCUMENT_ROOT}/%1/public/%2 -f
+    RewriteRule ^(?!public/)(.*)$ public/$1 [END]
+
+    # Everything else (routes + site root) -> root front controller
+    RewriteRule ^(?!public/) index.php [END]
+</IfModule>
+
+# Block access to sensitive files
+<FilesMatch "^(\.env|composer\.(json|lock)|.*\.sql|.*\.zip)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

@@ -5,7 +5,7 @@
 @section('content')
 
 <!--Page Title-->
-<section class="page-banner style-two" style="background-image:url({{ asset('images/background/services-title-bg.jpg') }});">
+<section class="page-banner style-two" style="background-image:url({{ asset('images/background/breadcrumb.png') }});">
     <div class="auto-container">
         <div class="inner-container clearfix">
             <h1>Our Services</h1>
